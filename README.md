@@ -1,5 +1,7 @@
 ![](logo.png)
 
+Here's an additonal readme line
+
 `metaphor` is an example application which serves as a demonstration space for how your applications hook into your infrastructure and tooling.
 
 `metaphor` is deployed to all of your environments just like your other applications will be. This means that when you make changes to your ci/cd, you can test it out using an application that works just like your applications do.
