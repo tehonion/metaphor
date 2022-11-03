@@ -6,9 +6,9 @@
 
 The deployed instances of `metaphor` are available at:
 
-- https://metaphor-development.<AWS_HOSTED_ZONE_NAME>
-- https://metaphor-staging.<AWS_HOSTED_ZONE_NAME>
-- https://metaphor-production.<AWS_HOSTED_ZONE_NAME>
+- https://metaphor-development.
+- https://metaphor-staging.
+- https://metaphor-production.
 
 `metaphor` currently demonstrates the following capabilities:
 

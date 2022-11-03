@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: <AWS_ACCOUNT_ID>.dkr.ecr.<AWS_DEFAULT_REGION>.amazonaws.com/metaphor-<CLUSTER_NAME>
+  repository: .dkr.ecr..amazonaws.com/metaphor-kubefirst
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
@@ -41,13 +41,13 @@ ingress:
     # Change to "letsencrypt-staging" while testing adjustments, change to "letsencrypt-prod" after confirming LE certificate was issued
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
   hosts:
-    - host: metaphor-development.<AWS_HOSTED_ZONE_NAME>
+    - host: metaphor-development.
       paths:
         - /
   tls:
    - secretName: metaphor-tls
      hosts:
-       - metaphor-development.<AWS_HOSTED_ZONE_NAME>
+       - metaphor-development.
 
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
